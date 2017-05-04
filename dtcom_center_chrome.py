@@ -130,9 +130,9 @@ except:
 try:
 	send = driver.find_element_by_class_name(date)
 	send.send_keys(u"11.03.2088")
-	print(u'12. Корректная дата напечатана -              ОК')
+	print(u'12. Корректная дата напечатана -                ОК')
 except:
-	print(u'12. Корректная дата напечатана -              ОШИБКА')
+	print(u'12. Корректная дата напечатана -                ОШИБКА')
 
 try:
 	driver.find_element_by_class_name(select_type).click()
@@ -605,7 +605,7 @@ if promo_value == u'':
 else:
 	print u"77. Промо-код не пус                            ОШИБКА"
 
-time.sleep(1)
+time.sleep(2)
 try:
 	driver.find_element_by_css_selector(get_the_price).click()
 	print(u'78. Кнопка получить стоимость нажата            ОК')
